@@ -1,0 +1,7 @@
+C:\COMPSCI_PROJECTS\c#\Methods\Methods\bin\Debug\Methods.exe.config
+C:\COMPSCI_PROJECTS\c#\Methods\Methods\bin\Debug\Methods.exe
+C:\COMPSCI_PROJECTS\c#\Methods\Methods\bin\Debug\Methods.pdb
+C:\COMPSCI_PROJECTS\c#\Methods\Methods\obj\Debug\Methods.csproj.AssemblyReference.cache
+C:\COMPSCI_PROJECTS\c#\Methods\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
+C:\COMPSCI_PROJECTS\c#\Methods\Methods\obj\Debug\Methods.exe
+C:\COMPSCI_PROJECTS\c#\Methods\Methods\obj\Debug\Methods.pdb
