@@ -26,6 +26,11 @@ namespace Methods
     {
         static void Main()
         {
+            // Title of console
+            Console.Title = $"{ReturnType.ReturnName()} - {ReturnType.ReturnAge()}";
+
+            ReturnType.PrintIntroduction();
+
             // Public static void
             Test.Something();
 
@@ -39,6 +44,24 @@ namespace Methods
             VoidMethods.ShowVoidMethods();
             VoidMethods.CreateAndPrintArray();
             VoidMethods.ShowWelcomeMessage();
+
+            int[] numbers = new int[3];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                numbers[i] = ReturnType.ReadNumberFromConsole();
+            }
+
+            foreach (var item in numbers)
+            {
+                Console.WriteLine($"{item}");
+            }
+
+            int[] newNumbers = ReturnType.CreateRandomArray();
+
+            foreach (var item in newNumbers)
+            {
+                Console.WriteLine($"{item} ");
+            }
 
             Console.ReadLine();
         }
