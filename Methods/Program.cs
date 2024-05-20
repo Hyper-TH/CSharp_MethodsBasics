@@ -35,14 +35,19 @@ namespace Methods
 
             WelcomeMessage();
 
+
+            VoidMethods.ShowVoidMethods();
+            VoidMethods.CreateAndPrintArray();
+            VoidMethods.ShowWelcomeMessage();
+
             Console.ReadLine();
         }
 
         // static = accessed anywhere from everywhere (no need for declaration of instance)
-        // 
         static void WelcomeMessage()
         {
             Console.WriteLine("Hello World");
         }
+
     }
 }
