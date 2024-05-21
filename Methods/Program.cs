@@ -64,6 +64,7 @@ namespace Methods
             }
 
             Parameters.ShowParameters();
+            Optional.ShowOptional();
            
             Console.ReadLine();
         }
