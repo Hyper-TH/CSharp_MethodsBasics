@@ -63,6 +63,8 @@ namespace Methods
                 Console.WriteLine($"{item} ");
             }
 
+            Parameters.ShowParameters();
+           
             Console.ReadLine();
         }
 
