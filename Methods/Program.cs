@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Methods
@@ -77,6 +78,8 @@ namespace Methods
              * Function should calculate the area using (w x h)/2
              * Call in main and print out the area of the triangle
             */
+
+            /*
             double width = ReadDouble("width");
             double height = ReadDouble("height");
 
@@ -84,8 +87,79 @@ namespace Methods
             double area = CalculateArea(ref width, ref height);
 
             Console.WriteLine($"Area {area}");
+            */
+
+            /* Excercise 2 */
+            /*
+             * Create and initialize int array of numbers
+             * Create function SumOfNumbers with int return type
+             * int array param
+             * Functon should return total of all numbers
+             * Extra: check array length
+                * Return -1 if array empty
+                * Check return in main and output message
+                * Do we need to return -1, how else can we make this?
+             */
+
+            int[] arr = new int[]
+            {
+                1, 2, 3, 4, 5
+            };
+
+            int sum = SumOfNumbers(arr);
+            if (sum > 0)
+            {
+                Console.WriteLine($"Total is {sum}");
+            }
+            else
+            {
+                Console.WriteLine("Empty Array");
+            };
+
+            if (AlternateSumOfNumbers(arr, out int total))
+            {
+                Console.WriteLine($"Total is {sum}");
+            }
+            else
+            {
+                Console.WriteLine("Empty Array");
+            };
+
 
             Console.ReadLine();
+        }
+
+        static int SumOfNumbers(int[] arr)
+        {
+            int total = 0;
+            if (arr.Length != 0)
+            {
+                foreach (var item in arr)
+                {
+                    total += item;
+                }
+
+                return total;
+            }
+
+            return total;
+        }
+
+        static bool AlternateSumOfNumbers(int[] arr, out int total)
+        {
+            total = 0;
+
+            if (arr.Length != 0)
+            {
+                foreach (var item in arr)
+                {
+                    total += item;
+                }
+
+                return true;
+            }
+
+            return false;
         }
 
         // static = accessed anywhere from everywhere (no need for declaration of instance)
