@@ -27,26 +27,26 @@ namespace Methods
         static void Main()
         {
             // Title of console
-            Console.Title = $"{ReturnType.ReturnName()} - {ReturnType.ReturnAge()}";
+            // Console.Title = $"{ReturnType.ReturnName()} - {ReturnType.ReturnAge()}";
 
-            ReturnType.PrintIntroduction();
+            // ReturnType.PrintIntroduction();
 
             // Public static void
-            Test.Something();
+            // Test.Something();
 
             // Public void
-            Test test = new Test();
-            test.AnotherSomething();
+            // Test test = new Test();
+            // test.AnotherSomething();
 
-            WelcomeMessage();
+            // WelcomeMessage();
 
 
-            VoidMethods.ShowVoidMethods();
-            VoidMethods.CreateAndPrintArray();
-            VoidMethods.ShowWelcomeMessage();
+            // VoidMethods.ShowVoidMethods();
+            // VoidMethods.CreateAndPrintArray();
+            // VoidMethods.ShowWelcomeMessage();
 
-            int[] numbers = new int[3];
-            for (int i = 0; i < numbers.Length; i++)
+            // int[] numbers = new int[3];
+            /* for (int i = 0; i < numbers.Length; i++)
             {
                 numbers[i] = ReturnType.ReadNumberFromConsole();
             }
@@ -62,12 +62,28 @@ namespace Methods
             {
                 Console.WriteLine($"{item} ");
             }
+            */
 
-            Parameters.ShowParameters();
-            Optional.ShowOptional();
-            Named.ShowNamed();
-            OutParameters.ShowOutParameters();
-            ReferenceParameters.ShowReferenceParameters();
+            // Parameters.ShowParameters();
+            // Optional.ShowOptional();
+            // Named.ShowNamed();
+            // OutParameters.ShowOutParameters();
+            // ReferenceParameters.ShowReferenceParameters();
+
+            /* Excercise 1 */
+            /*
+             * Ask user for width and height, store them
+             * Create function to calculate the area
+             * Function should calculate the area using (w x h)/2
+             * Call in main and print out the area of the triangle
+            */
+            double width = ReadDouble("width");
+            double height = ReadDouble("height");
+
+            Console.WriteLine($"Width: {width} \nHeight: {height}\n");
+            double area = CalculateArea(ref width, ref height);
+
+            Console.WriteLine($"Area {area}");
 
             Console.ReadLine();
         }
@@ -76,6 +92,17 @@ namespace Methods
         static void WelcomeMessage()
         {
             Console.WriteLine("Hello World");
+        }
+
+        static double ReadDouble(string message)
+        {
+            Console.WriteLine($"Input {message}");
+            return Convert.ToDouble(Console.ReadLine());
+        }
+
+        static double CalculateArea(ref double width, ref double height)
+        {
+            return (width * height)/2;
         }
 
     }
