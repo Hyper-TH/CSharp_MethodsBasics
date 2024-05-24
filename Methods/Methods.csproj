@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="Named.cs" />
     <Compile Include="Optional.cs" />
+    <Compile Include="OutParameters.cs" />
     <Compile Include="Parameters.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenceParameters.cs" />
     <Compile Include="ReturnType.cs" />
     <Compile Include="VoidMethods.cs" />
   </ItemGroup>
